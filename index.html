@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferência BH - Setembro 2026</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #eef2f3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .page {
+            width: 210mm;
+            height: 297mm;
+            background: white;
+            padding: 50px;
+            box-sizing: border-box;
+            border-top: 20px solid #1a5276;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #1a5276;
+            font-size: 50px;
+            margin: 0;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        .header p {
+            font-size: 22px;
+            color: #546e7a;
+            font-style: italic;
+        }
+        .date-badge {
+            background: #1a5276;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        .date-badge h2 {
+            margin: 0;
+            font-size: 35px;
+        }
+        .main-content {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .card {
+            background: #f8f9f9;
+            border-left: 8px solid #2980b9;
+            padding: 25px;
+            border-radius: 5px;
+        }
+        .card h3 {
+            color: #1a5276;
+            margin-top: 0;
+            font-size: 24px;
+        }
+        .price-tag {
+            background: #27ae60;
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .price-tag span {
+            font-size: 18px;
+            display: block;
+        }
+        .price-tag strong {
+            font-size: 55px;
+            display: block;
+        }
+        .vagas-urgente {
+            border: 4px solid #c0392b;
+            color: #c0392b;
+            padding: 20px;
+            text-align: center;
+            font-weight: 800;
+            font-size: 28px;
+            border-radius: 10px;
+            animation: pulse 2s infinite;
+        }
+        .footer-note {
+            margin-top: auto;
+            text-align: center;
+            font-size: 16px;
+            color: #7f8c8d;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            font-size: 20px;
+        }
+        ul li {
+            margin-bottom: 15px;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+        @media print {
+            body { background: none; }
+            .page { box-shadow: none; width: 100%; height: auto; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <h1>CONFERÊNCIA BH</h1>
+            <p>"Tempo de comunhão e renovo espiritual"</p>
+        </div>
+
+        <div class="date-badge">
+            <p style="margin:0; font-weight: bold; letter-spacing: 2px;">SALVE ESTA DATA</p>
+            <h2>19 e 20 DE SETEMBRO DE 2026</h2>
+        </div>
+
+        <div class="main-content">
+            <div class="card">
+                <h3>O que está incluso?</h3>
+                <ul>
+                    <li>🚌 <strong>Passagem ida e volta</strong></li>
+                    <li>🏨 <strong>2 Diárias no SESC Venda Nova</strong></li>
+                    <li>🍴 <strong>Alimentação completa inclusa</strong><br>
+                        <small style="font-size: 14px; color: #7f8c8d;">(Café, almoço e jantar direto no SESC)</small>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="price-tag">
+                <span>Investimento Total</span>
+                <strong>R$ 470,00</strong>
+                <p>Tudo incluso!</p>
+            </div>
+        </div>
+
+        <div class="vagas-urgente">
+            ⚠️ ÚLTIMAS 6 VAGAS NO ÔNIBUS!
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <p style="font-size: 18px; color: #2c3e50;">Não perca esta oportunidade de estarmos juntos em Belo Horizonte. <br>Procure a liderança hoje mesmo para garantir seu lugar!</p>
+        </div>
+
+        <div class="footer-note">
+            Organização: Igreja em Serra/ES | Local do Evento: Belo Horizonte - MG
+        </div>
+    </div>
+</body>
+</html>
